@@ -99,7 +99,136 @@ const Index = () => {
           </div>
         </section>
 
-        <footer className="text-center pt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <section className="mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            Как работает бот
+          </h2>
+          <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+            <p>
+              Представь, что у тебя в телефоне есть личный куратор по РВП, который всегда на связи. Эту роль выполняет RVP-Urfu.
+            </p>
+            <p>
+              Сначала студент запускает бота в Telegram и выбирает язык.
+            </p>
+            <p>
+              Затем он попадает в простое главное меню, где есть разделы: документы для РВП, сроки и подача, изменения в правилах, задать вопрос, напоминания и информация о боте.
+            </p>
+            <p>
+              В разделах можно получить список документов, понять сроки, узнать общие правила подачи и увидеть возможные изменения.
+            </p>
+            <p>
+              Если стандартного ответа не хватает, студент задает свой вопрос, и бот перенаправляет его модератору для персонального ответа.
+            </p>
+            <p>
+              При необходимости студент может включить напоминания, чтобы не пропустить важные даты, связанные с РВП.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            Целевая аудитория
+          </h2>
+          <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+            <p>
+              Бот создан для иностранных студентов УрФУ, которые подают на РВП впервые или продлевают его.
+            </p>
+            <p>
+              Полезен студентам 1–4 курсов и магистрантуры, новичкам, недавно поступившим в университет, а также тем, кто вернулся с каникул и снова оформляет документы.
+            </p>
+            <p>
+              Подходит тем, у кого есть базовые вопросы о документах, сроках, этапах подачи и типичных ошибках.
+            </p>
+            <p>
+              Бот не ориентирован на граждан России, студентов других вузов и людей, не связанных с университетом.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
+            Формат использования
+          </h2>
+          <div className="space-y-8">
+            <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+              <p>
+                Базовый функционал бота доступен бесплатно.
+              </p>
+              <p>
+                В бесплатной версии студент получает основную информацию о документах и сроках, узнает об изменениях в правилах, может включить базовые напоминания и задать вопрос модератору.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                Премиум-сопровождение
+              </h3>
+              <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+                <p>
+                  Для студентов, которые хотят максимальной уверенности и контроля, предусмотрен формат премиум-сопровождения как концепция.
+                </p>
+                <p>
+                  В него можно включить приоритетные ответы модераторов в рабочее время, персональный чек-лист с учетом конкретной ситуации студента, более детальные напоминания по шагам и возможность краткой консультации.
+                </p>
+                <p>
+                  Стоимость и техническая реализация тарифа могут настраиваться отдельно, в зависимости от выбранной платформы.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16 animate-fade-in" style={{ animationDelay: '0.7s' }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            Примеры использования
+          </h2>
+          <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+            <p>
+              Первая подача: студент только поступил в УрФУ. Он открывает бота, изучает разделы с документами и сроками, получает четкое понимание процесса и чувствует себя увереннее.
+            </p>
+            <p>
+              Возвращение с каникул: студент вернулся из дома и хочет убедиться, что ничего не изменилось. Он проверяет раздел с изменениями и при необходимости задает вопрос.
+            </p>
+            <p>
+              Максимальный контроль: студент боится допустить ошибку и использует бота как проводника по шагам, опираясь на инструкции и напоминания.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            Как попробовать бота
+          </h2>
+          <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+            <p>
+              Чтобы начать пользоваться, нужно найти бота RVP-Urfu в Telegram по названию или ссылке, нажать кнопку «Старт», выбрать язык и открыть главное меню.
+            </p>
+            <p>
+              Дальше студент просто выбирает нужный раздел и получает информацию или задаёт свой вопрос.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16 animate-fade-in" style={{ animationDelay: '0.9s' }}>
+          <Card className="p-8 md:p-12 bg-muted/50 border-0">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Почему это важно
+            </h2>
+            <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
+              <p>
+                RVP-Urfu — это больше, чем инструмент.
+              </p>
+              <p>
+                Это помощник, который помогает иностранным студентам УрФУ проходить процесс РВП спокойнее, понятнее и без лишних ошибок.
+              </p>
+              <p>
+                Бот объединяет актуальную информацию, поддержку и структуру в одном месте и становится надежной опорой в важном для студента процессе.
+              </p>
+            </div>
+          </Card>
+        </section>
+
+        <footer className="text-center pt-8 animate-fade-in" style={{ animationDelay: '1s' }}>
           <Button 
             onClick={handleTelegramClick}
             size="lg"
