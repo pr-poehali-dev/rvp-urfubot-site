@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
-import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
   const handleTelegramClick = () => {
@@ -29,49 +28,46 @@ const Index = () => {
           </Button>
         </header>
 
-        <ScrollReveal animation="fade-in-up">
-          <section className="mb-20 max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-              Что делает бот
-            </h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  RVP-Urfu помогает иностранным студентам УрФУ пройти оформление РВП спокойнее и понятнее.
-                </p>
-              </div>
-              <div className="grid gap-4">
-                <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary hover:bg-card/50 transition-colors">
-                  <Icon name="HelpCircle" size={28} className="text-primary flex-shrink-0" />
-                  <span className="text-base font-medium">Ответы на частые вопросы</span>
-                </Card>
-                <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary hover:bg-card/50 transition-colors">
-                  <Icon name="Bell" size={28} className="text-primary flex-shrink-0" />
-                  <span className="text-base font-medium">Информация об изменениях и требованиях</span>
-                </Card>
-                <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary hover:bg-card/50 transition-colors">
-                  <Icon name="ListChecks" size={28} className="text-primary flex-shrink-0" />
-                  <span className="text-base font-medium">Пошаговые инструкции по подаче</span>
-                </Card>
-                <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary hover:bg-card/50 transition-colors">
-                  <Icon name="Clock" size={28} className="text-primary flex-shrink-0" />
-                  <span className="text-base font-medium">Напоминания о важных сроках</span>
-                </Card>
-                <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary hover:bg-card/50 transition-colors">
-                  <Icon name="MessageSquare" size={28} className="text-primary flex-shrink-0" />
-                  <span className="text-base font-medium">Возможность задать свой вопрос</span>
-                </Card>
-              </div>
+        <section className="mb-20 max-w-6xl mx-auto animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
+            Что делает бот
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-4">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                RVP-Urfu помогает иностранным студентам УрФУ пройти оформление РВП спокойнее и понятнее.
+              </p>
             </div>
-          </section>
-        </ScrollReveal>
+            <div className="grid gap-4">
+              <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary">
+                <Icon name="HelpCircle" size={28} className="text-primary flex-shrink-0" />
+                <span className="text-base font-medium">Ответы на частые вопросы</span>
+              </Card>
+              <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary">
+                <Icon name="Bell" size={28} className="text-primary flex-shrink-0" />
+                <span className="text-base font-medium">Информация об изменениях и требованиях</span>
+              </Card>
+              <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary">
+                <Icon name="ListChecks" size={28} className="text-primary flex-shrink-0" />
+                <span className="text-base font-medium">Пошаговые инструкции по подаче</span>
+              </Card>
+              <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary">
+                <Icon name="Clock" size={28} className="text-primary flex-shrink-0" />
+                <span className="text-base font-medium">Напоминания о важных сроках</span>
+              </Card>
+              <Card className="p-4 flex items-center gap-4 border-l-4 border-l-primary">
+                <Icon name="MessageSquare" size={28} className="text-primary flex-shrink-0" />
+                <span className="text-base font-medium">Возможность задать свой вопрос</span>
+              </Card>
+            </div>
+          </div>
+        </section>
 
-        <ScrollReveal animation="slide-in-left" delay={100}>
-          <section className="mb-20 max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-              Проблема и решение
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+        <section className="mb-20 max-w-6xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
+            Проблема и решение
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8 bg-destructive/5 border-2 border-destructive/20">
               <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
                 <Icon name="AlertCircle" size={28} className="text-destructive" />
@@ -118,14 +114,12 @@ const Index = () => {
               </ul>
             </Card>
           </div>
-          </section>
-        </ScrollReveal>
+        </section>
 
-        <ScrollReveal animation="fade-in-up" delay={150}>
-          <section className="mb-20 max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-              Как работает бот
-            </h2>
+        <section className="mb-20 max-w-5xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
+            Как работает бот
+          </h2>
           <div className="space-y-6">
             {[
               { num: 1, text: "Студент открывает бота в Telegram и нажимает «Старт»" },
@@ -134,7 +128,7 @@ const Index = () => {
               { num: 4, text: "При нестандартной ситуации пишет свой вопрос и получает ответ от модератора" },
               { num: 5, text: "При необходимости настраивает напоминания, чтобы ничего не пропустить" }
             ].map((step) => (
-              <Card key={step.num} className="p-6 flex items-start gap-6 hover:shadow-lg hover:scale-[1.02] transition-all">
+              <Card key={step.num} className="p-6 flex items-start gap-6 hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl flex-shrink-0">
                   {step.num}
                 </div>
@@ -142,14 +136,12 @@ const Index = () => {
               </Card>
             ))}
           </div>
-          </section>
-        </ScrollReveal>
+        </section>
 
-        <ScrollReveal animation="slide-in-right" delay={200}>
-          <section className="mb-20 max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-              Для кого бот
-            </h2>
+        <section className="mb-20 max-w-6xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
+            Для кого бот
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8 bg-primary/5 border-2 border-primary/20">
               <h3 className="text-2xl font-bold text-foreground mb-6">
@@ -195,14 +187,12 @@ const Index = () => {
               </ul>
             </Card>
           </div>
-          </section>
-        </ScrollReveal>
+        </section>
 
-        <ScrollReveal animation="fade-in-up" delay={250}>
-          <section className="mb-20 max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-              Тарифы
-            </h2>
+        <section className="mb-20 max-w-6xl mx-auto animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
+            Тарифы
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8 border-2">
               <div className="mb-6">
@@ -257,21 +247,19 @@ const Index = () => {
               </ul>
             </Card>
           </div>
-          </section>
-        </ScrollReveal>
+        </section>
 
-        <ScrollReveal animation="slide-in-left" delay={300}>
-          <section className="mb-20 max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-              Отзывы
-            </h2>
+        <section className="mb-20 max-w-5xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
+            Отзывы
+          </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               "Бот спас меня: за пять минут разобрался, куда идти и во сколько. Не пришлось ездить зря",
               "Информации хватило, чтобы всё сделать с первой попытки",
               "Напоминания помогли не забыть про подачу и подготовку документов"
             ].map((review, idx) => (
-              <Card key={idx} className="p-6 bg-muted/30 hover:bg-muted/40 transition-all hover:scale-105">
+              <Card key={idx} className="p-6 bg-muted/30">
                 <div className="flex gap-1 mb-4">
                   {[1,2,3,4,5].map((star) => (
                     <Icon key={star} name="Star" size={16} className="text-primary fill-primary" />
@@ -281,14 +269,12 @@ const Index = () => {
               </Card>
             ))}
           </div>
-          </section>
-        </ScrollReveal>
+        </section>
 
-        <ScrollReveal animation="fade-in-up" delay={350}>
-          <section className="mb-20 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-              Как начать
-            </h2>
+        <section className="mb-20 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.7s' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
+            Как начать
+          </h2>
           <Card className="p-8 bg-muted/30">
             <ol className="space-y-4">
               {[
@@ -304,12 +290,10 @@ const Index = () => {
               ))}
             </ol>
           </Card>
-          </section>
-        </ScrollReveal>
+        </section>
 
-        <ScrollReveal animation="fade-in-up" delay={400}>
-          <footer className="text-center max-w-4xl mx-auto">
-            <Card className="p-10 bg-primary/5 border-2 border-primary/20 mb-10">
+        <footer className="text-center max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <Card className="p-10 bg-primary/5 border-2 border-primary/20 mb-10">
             <h2 className="text-3xl font-bold text-foreground mb-6">
               Почему это важно
             </h2>
@@ -326,7 +310,6 @@ const Index = () => {
             </Button>
           </Card>
         </footer>
-        </ScrollReveal>
 
       </div>
     </div>
